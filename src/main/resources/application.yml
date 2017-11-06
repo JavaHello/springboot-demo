@@ -19,8 +19,8 @@ spring:
   thymeleaf:
     cache: false
 mybatis:
-    mapper-locations: classpath:mappers/**/*Mapper.xml
-    type-aliases-package: org.lk.springboot.demo.domain.model
+    mapper-locations: classpath:mappings/**/*Mapper.xml
+    type-aliases-package: com.exampl.demo.domain.model
     config-location: classpath:mybatis-config.xml
 pagehelper:
   auto-dialect: true

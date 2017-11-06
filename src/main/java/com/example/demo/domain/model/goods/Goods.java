@@ -1,14 +1,22 @@
 package com.example.demo.domain.model.goods;
 
+import com.alibaba.fastjson.annotation.JSONField;
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
+/**
+ * @author lk
+ */
 public class Goods implements Serializable {
     private Long id;
 
+    @JSONField(format = "yyyy-MM-dd HH:mm:ss")
     private Date createTime;
 
+    @JSONField(serialize = false)
     private Date lastUpdateTeim;
 
     private String name;
